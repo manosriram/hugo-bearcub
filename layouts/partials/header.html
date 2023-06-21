@@ -1,2 +1,6 @@
 <a href="{{ relURL .Site.Home.Permalink }}" class="title"><h1>{{ .Site.Title }}</h1></a>
+<head>
+  {{ template "_internal/google_analytics.html" . }}
+  {{ template "_internal/google_analytics_async.html" . }}
+</head>
 <nav>{{- partial "nav.html" . -}}</nav>
